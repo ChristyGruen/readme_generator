@@ -26,7 +26,7 @@ inquirer
     //save readme
 
     // TODO: Create a function to write README file
-    fs.writeFile('index.html', finalStr,(err) => err ? console.error(err): 
+    fs.writeFile('README.md', finalStr,(err) => err ? console.error(err): 
 
     console.log('Success!'))
   }
@@ -35,44 +35,44 @@ inquirer
 
   function docContent(response){
     return `
-    # ${projTitle}
+    # ${response.projTitle}
 
     ## Description
     
-        ${projDesc}
+        ${response.projDesc}
     
     ## Installation Instructions
     
-        ${projInstall}
+        ${response.projInstall}
     
     ## Instructions for Use
     
-        ${projInstructions}
+        ${response.projInstructions}
     
     ## License
     
-        ${projLicense}
+        ${response.projLicense}
     
     ## Collaborators
     
-        ${projCollab}
+        ${response.projCollab}
     
     ## References
     
       ### Attributions
-        ${projAttribution}
+        ${response.projAttribution}
       
       ### Tutorials 
-        ${projTutorial}
+        ${response.projTutorial}
     
     ## Features
-        ${projFeatures}
+        ${response.projFeatures}
     
     ## How to Contribute
-        ${projContribute}
+        ${response.projContribute}
     
     ## Unit Testing
-        ${projTests}
+        ${response.projTests}
     `
   }
 
@@ -105,13 +105,13 @@ inquirer
 
 
 // TODO: Create a function to initialize app
-function init() {
-  inquirer
-    .prompt([
+// function init() {
+//   inquirer
+//     .prompt([
       
-    ])
+//     ])
 
-},
+// },
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
