@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-
+//licenseBadges object
 let licenseBadges = [
   {licenseName: "MIT",
   licenseBadge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'},
@@ -16,7 +16,7 @@ let licenseBadges = [
   licenseBadge: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'}
 ]
 
-
+//ask all the questions
 inquirer
   .prompt([
     {type: 'input',message: 'Enter your project title?',name: 'projTitle' },
@@ -59,6 +59,7 @@ inquirer
   )
 
 
+//function to populate the README
 function docContent(response, prettyBadge){
   return `
   # ${response.projTitle}
@@ -86,6 +87,8 @@ function docContent(response, prettyBadge){
   ## Usage
   
       ${response.projInstructions}
+  Watch a demo of the app here:
+  <https://watch.screencastify.com/v/LGnvXAt6R6cMVc3untRV>
   
   ## License
     This project is covered under the ${response.projLicense} license.
@@ -109,49 +112,5 @@ function docContent(response, prettyBadge){
   ## References
   ${response.refDescription} provided by:
   <${response.refLink}>
-
-
-  
   `
 }
-
-
-
-
-
-
-
-// TODO: Create an array of questions for user input
-// keep this in to possibly incorporate for loop later
-// const questions = [
-//   {type: 'input',message: 'Enter your project title?',name: 'projTitle' },
-//   {type: 'input',message: 'Provide a short description of including the what, why and how of your project.',name: 'projDesc' },
-//   {type: 'input',message: 'What are the steps required to install your project?',name: 'projInstall' },
-//   {type: 'input',message: 'Provide instructions and examples for use.',name: 'projInstructions' },
-//   {type: 'list',message: 'Select the license that will be used for this project',choices:['MIT', 'apache-2.0','cc','gpl', 'isc'], name: 'projLicense' },
-//   {type: 'input',message: 'Provide your collaborators, with links to their gitHub profiles',name: 'projCollab' },
-//   {type: 'input',message: 'Provide any third-party asset attributions',name: 'projAttribution' },
-//   {type: 'input',message: 'Provide any tutorials used, with links to the tutorial',name: 'projTutorial' },
-//   {type: 'input',message: 'Provide a list of features (optional)',name: 'projFeatures' },
-//   {type: 'input',message: 'Provide information on how to contribute (optional)',name: 'projContribute' },
-//   {type: 'input',message: 'Provide tests for your application (optional)',name: 'projTests' },
-// {type: 'input',message: 'Provide your gitHub link so users can review the documentation and contact you with questions', name: 'projQnA' }
-// ];
-
-
-
-
-
-
-
-// TODO: Create a function to initialize app
-// function init() {
-//   inquirer
-//     .prompt([
-      
-//     ])
-
-// },
-
-// // Function call to initialize app
-// init();
