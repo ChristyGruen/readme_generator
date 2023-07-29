@@ -2,25 +2,42 @@
 
 ## Description
 
-    ${projDesc}
+    ${response.projDesc}
+
+## Table of Contents
+[Installation Instructions](#installation-instructions)<br>
+[Instructions for Use (Usage)](#instructions-for-use)<br>
+[License](#license)<br>
+[Contributors](#contributors)<br>
+[Tests](#tests)<br>
+[Questions](#questions)<br>
 
 ## Installation Instructions
 
-    ${projInstall}
+    ${response.projInstall}
 
 ## Instructions for Use
 
-    ${projInstructions}
+    ${response.projInstructions}
 
 ## License
+    This project is covered under the ${response.projLicense} license.
 
-    ${projLicense}
+## Contributors
+    ${response.projCollab}
 
-## Collaborators
+#### How to Contribute
+    ${response.projContribute}
 
-    ${projCollab}
 
-## References
+## Tests
+    ${response.projTests}
+
+## Questions
+    ${response.projQuestions}
+
+
+<!-- ## References
 
   ### Attributions
     ${projAttribution}
@@ -29,10 +46,9 @@
     ${projTutorial}
 
 ## Features
-    ${projFeatures}
+    ${projFeatures} -->
 
-## How to Contribute
-    ${projContribute}
+<!-- ## How to Contribute
+    ${projContribute} -->
 
-## Unit Testing
-    ${projTests}
+
