@@ -22,17 +22,21 @@ inquirer
     {type: 'input',message: 'Enter your project title?',name: 'projTitle' },
     {type: 'input',message: 'Provide a short description of including the what, why and how of your project.',name: 'projDesc' },
     {type: 'input',message: 'What are the steps required to install your project?',name: 'projInstall' },
-    {type: 'input',message: 'Provide instructions and examples for use.',name: 'projInstructions' },
+    {type: 'input',message: 'What steps are required to run the application?',name: 'projInstructions' },
     {type: 'list',message: 'Select the license that will be used for this project',choices:['MIT', 'apache-2.0','Boost','gnu-v3', 'Mozilla'], name: 'projLicense' },
-    {type: 'input',message: 'Provide your collaborators, with links to their gitHub profiles',name: 'projCollab' },
+    {type: 'input',message: "Provide a collaborator's gitHub name so users can access their gitHub",name: 'projCollab' },
     {type: 'input',message: 'Provide information on how to contribute (optional)',name: 'projContribute' },
     {type: 'input',message: 'Provide tests for your application (optional)',name: 'projTests' },
     {type: 'input',message: 'Provide your gitHub username to create a github link so users can review the documentation', name: 'projGitHubUN' },
     {type: 'input',message: 'Provide your gitHub email so users can  contact you with questions', name: 'projGitHubEmail' },
+    {type: 'input',message: 'Provide a description of what the reference provided', name: 'refDescription' },
+    {type: 'input',message: 'Provide a link to the reference site', name: 'refLink' },
   ]
  
   )
   .then((response)=>{
+
+    console.log('====================response=================')
     //use projLicense to return associated badge URL
     let prettyBadge
     for (i in licenseBadges){
@@ -43,7 +47,7 @@ inquirer
     console.log(prettyBadge)
 
     //write readme
-    const finalStr = docContent(response);
+    const finalStr = docContent(response,prettyBadge);
     console.log(finalStr)
     //save readme
 
@@ -55,9 +59,11 @@ inquirer
   )
 
 
-function docContent(response){
+function docContent(response, prettyBadge){
   return `
   # ${response.projTitle}
+
+ ${prettyBadge}
 
   ## Description
   
@@ -84,8 +90,8 @@ function docContent(response){
     This project is covered under the ${response.projLicense} license.
 
   ## Contributors
-      ${response.projCollab}
-  
+  ${response.projCollab} at <https://github.com/${response.projCollab}>
+      
   #### How to Contribute
       ${response.projContribute}
 
@@ -93,10 +99,18 @@ function docContent(response){
       ${response.projTests}
 
   ## Questions
-      For further information, access my gitHub profile here:
-      <https://github.com/${response.projGitHubUN}>
-      For questions, comments and concerns, contact me here:
-      <${response.projGitHubEmail}>
+  For further information, access my gitHub profile here:
+  <https://github.com/${response.projGitHubUN}>
+  <br>
+  For questions, comments and concerns, contact me here:
+  <${response.projGitHubEmail}>
+
+  ## References
+  ${response.refDescription} provided by:
+  <${response.refLink}>
+
+
+  
   `
 }
 
