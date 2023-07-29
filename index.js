@@ -11,11 +11,10 @@ inquirer
     {type: 'input',message: 'Provide instructions and examples for use.',name: 'projInstructions' },
     {type: 'list',message: 'Select the license that will be used for this project',choices:['MIT', 'apache-2.0','cc','gpl', 'isc'], name: 'projLicense' },
     {type: 'input',message: 'Provide your collaborators, with links to their gitHub profiles',name: 'projCollab' },
-    {type: 'input',message: 'Provide any third-party asset attributions',name: 'projAttribution' },
-    {type: 'input',message: 'Provide any tutorials used, with links to the tutorial',name: 'projTutorial' },
-    {type: 'input',message: 'Provide a list of features (optional)',name: 'projFeatures' },
     {type: 'input',message: 'Provide information on how to contribute (optional)',name: 'projContribute' },
     {type: 'input',message: 'Provide tests for your application (optional)',name: 'projTests' },
+    {type: 'input',message: 'Provide your gitHub username to create a github link so users can review the documentation', name: 'projGitHubUN' },
+    {type: 'input',message: 'Provide your gitHub email so users can  contact you with questions', name: 'projGitHubEmail' },
   ]
  
   )
@@ -40,39 +39,41 @@ inquirer
     ## Description
     
         ${response.projDesc}
+
+    ## Table of Contents
+    [Installation Instructions](#installation-instructions)<br>
+    [Usage](#usage)<br>
+    [License](#license)<br>
+    [Contributors](#contributors)<br>
+    [Tests](#tests)<br>
+    [Questions](#questions)<br>
+
     
     ## Installation Instructions
     
         ${response.projInstall}
     
-    ## Instructions for Use
+    ## Usage
     
         ${response.projInstructions}
     
     ## License
-    
-        ${response.projLicense}
-    
-    ## Collaborators
-    
+      This project is covered under the ${response.projLicense} license.
+  
+    ## Contributors
         ${response.projCollab}
     
-    ## References
-    
-      ### Attributions
-        ${response.projAttribution}
-      
-      ### Tutorials 
-        ${response.projTutorial}
-    
-    ## Features
-        ${response.projFeatures}
-    
-    ## How to Contribute
+    #### How to Contribute
         ${response.projContribute}
-    
-    ## Unit Testing
+  
+    ## Tests
         ${response.projTests}
+
+    ## Questions
+        For further information, access my gitHub profile here:
+        <https://github.com/${response.projGitHubUN}>
+        For questions, comments and concerns, contact me here:
+        <${response.projGitHubEmail}>
     `
   }
 
@@ -96,6 +97,7 @@ inquirer
 //   {type: 'input',message: 'Provide a list of features (optional)',name: 'projFeatures' },
 //   {type: 'input',message: 'Provide information on how to contribute (optional)',name: 'projContribute' },
 //   {type: 'input',message: 'Provide tests for your application (optional)',name: 'projTests' },
+// {type: 'input',message: 'Provide your gitHub link so users can review the documentation and contact you with questions', name: 'projQnA' }
 // ];
 
 
