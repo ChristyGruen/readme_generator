@@ -32,50 +32,50 @@ inquirer
   )
 
 
-  function docContent(response){
-    return `
-    # ${response.projTitle}
+function docContent(response){
+  return `
+  # ${response.projTitle}
 
-    ## Description
-    
-        ${response.projDesc}
-
-    ## Table of Contents
-    [Installation Instructions](#installation-instructions)<br>
-    [Usage](#usage)<br>
-    [License](#license)<br>
-    [Contributors](#contributors)<br>
-    [Tests](#tests)<br>
-    [Questions](#questions)<br>
-
-    
-    ## Installation Instructions
-    
-        ${response.projInstall}
-    
-    ## Usage
-    
-        ${response.projInstructions}
-    
-    ## License
-      This project is covered under the ${response.projLicense} license.
+  ## Description
   
-    ## Contributors
-        ${response.projCollab}
-    
-    #### How to Contribute
-        ${response.projContribute}
-  
-    ## Tests
-        ${response.projTests}
+      ${response.projDesc}
 
-    ## Questions
-        For further information, access my gitHub profile here:
-        <https://github.com/${response.projGitHubUN}>
-        For questions, comments and concerns, contact me here:
-        <${response.projGitHubEmail}>
-    `
-  }
+  ## Table of Contents
+  [Installation Instructions](#installation-instructions)<br>
+  [Usage](#usage)<br>
+  [License](#license)<br>
+  [Contributors](#contributors)<br>
+  [Tests](#tests)<br>
+  [Questions](#questions)<br>
+
+  
+  ## Installation Instructions
+  
+      ${response.projInstall}
+  
+  ## Usage
+  
+      ${response.projInstructions}
+  
+  ## License
+    This project is covered under the ${response.projLicense} license.
+
+  ## Contributors
+      ${response.projCollab}
+  
+  #### How to Contribute
+      ${response.projContribute}
+
+  ## Tests
+      ${response.projTests}
+
+  ## Questions
+      For further information, access my gitHub profile here:
+      <https://github.com/${response.projGitHubUN}>
+      For questions, comments and concerns, contact me here:
+      <${response.projGitHubEmail}>
+  `
+}
 
 
 
