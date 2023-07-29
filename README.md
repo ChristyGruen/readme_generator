@@ -1,7 +1,7 @@
 
   # Automated README file
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+ [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   ## Description
   
@@ -14,6 +14,7 @@
   [Contributors](#contributors)<br>
   [Tests](#tests)<br>
   [Questions](#questions)<br>
+  [References](#references)<br>
 
   
   ## Installation Instructions
@@ -25,7 +26,7 @@
       To run the app, type node index.js in the terminal and enter. Answer the questions posed in the terminal.  Once all the questions are answered, a README.md file will be generated in the root directory of the project.
   
   ## License
-    This project is covered under the gnu-v3 license.
+    This project is covered under the Mozilla license.
 
   ## Contributors
   ChristyGruen at <https://github.com/ChristyGruen>
@@ -41,7 +42,7 @@
   <https://github.com/ChristyGruen>
   <br>
   For questions, comments and concerns, contact me here:
-  <cg@gmail.com>
+  <cg@mail.com>
 
   ## References
   License badges provided by:

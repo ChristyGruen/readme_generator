@@ -76,6 +76,7 @@ function docContent(response, prettyBadge){
   [Contributors](#contributors)<br>
   [Tests](#tests)<br>
   [Questions](#questions)<br>
+  [References](#references)<br>
 
   
   ## Installation Instructions
