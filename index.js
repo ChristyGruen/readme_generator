@@ -21,12 +21,65 @@ inquirer
   )
   .then((response)=>{
     //write readme
-
+    const finalStr = docContent(response);
     console.log(finalStr)
     //save readme
 
     // TODO: Create a function to write README file
-    fs.writeFile('README.md', finalStr,(err) => err ? console.error(err): 
+    fs.writeFile('index.html', finalStr,(err) => err ? console.error(err): 
+
+    console.log('Success!'))
+  }
+  )
+
+
+  function docContent(response){
+    return `
+    # ${projTitle}
+
+    ## Description
+    
+        ${projDesc}
+    
+    ## Installation Instructions
+    
+        ${projInstall}
+    
+    ## Instructions for Use
+    
+        ${projInstructions}
+    
+    ## License
+    
+        ${projLicense}
+    
+    ## Collaborators
+    
+        ${projCollab}
+    
+    ## References
+    
+      ### Attributions
+        ${projAttribution}
+      
+      ### Tutorials 
+        ${projTutorial}
+    
+    ## Features
+        ${projFeatures}
+    
+    ## How to Contribute
+        ${projContribute}
+    
+    ## Unit Testing
+        ${projTests}
+    `
+  }
+
+
+
+
+
 
 
 // TODO: Create an array of questions for user input
