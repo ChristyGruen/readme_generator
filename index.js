@@ -21,12 +21,65 @@ inquirer
   )
   .then((response)=>{
     //write readme
-
+    const finalStr = docContent(response);
     console.log(finalStr)
     //save readme
 
     // TODO: Create a function to write README file
     fs.writeFile('README.md', finalStr,(err) => err ? console.error(err): 
+
+    console.log('Success!'))
+  }
+  )
+
+
+  function docContent(response){
+    return `
+    # ${response.projTitle}
+
+    ## Description
+    
+        ${response.projDesc}
+    
+    ## Installation Instructions
+    
+        ${response.projInstall}
+    
+    ## Instructions for Use
+    
+        ${response.projInstructions}
+    
+    ## License
+    
+        ${response.projLicense}
+    
+    ## Collaborators
+    
+        ${response.projCollab}
+    
+    ## References
+    
+      ### Attributions
+        ${response.projAttribution}
+      
+      ### Tutorials 
+        ${response.projTutorial}
+    
+    ## Features
+        ${response.projFeatures}
+    
+    ## How to Contribute
+        ${response.projContribute}
+    
+    ## Unit Testing
+        ${response.projTests}
+    `
+  }
+
+
+
+
+
 
 
 // TODO: Create an array of questions for user input
@@ -52,13 +105,13 @@ inquirer
 
 
 // TODO: Create a function to initialize app
-function init() {
-  inquirer
-    .prompt([
+// function init() {
+//   inquirer
+//     .prompt([
       
-    ])
+//     ])
 
-},
+// },
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
