@@ -29,7 +29,7 @@ inquirer
     {type: 'input',message: 'Provide information on how to contribute (optional)',name: 'projContribute' },
     {type: 'input',message: 'Provide tests for your application (optional)',name: 'projTests' },
     {type: 'input',message: 'Provide your gitHub username to create a github link so users can review the documentation', name: 'projGitHubUN' },
-    {type: 'input',message: 'Provide your gitHub email so users can  contact you with questions', name: 'projGitHubEmail' },
+    // {type: 'input',message: 'Provide your gitHub email so users can  contact you with questions', name: 'projGitHubEmail' },
     {type: 'input',message: 'Provide a description of what the reference provided', name: 'refDescription' },
     {type: 'input',message: 'Provide a link to the reference site', name: 'refLink' },
   ]
@@ -53,7 +53,7 @@ inquirer
     //save readme
 
     // TODO: Create a function to write README file
-    fs.writeFile('README.md', finalStr,(err) => err ? console.error(err): 
+    fs.writeFile(`README_${response.repoTitle}.md`, finalStr,(err) => err ? console.error(err): 
 
     console.log('Success!'))
   }

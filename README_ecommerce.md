@@ -44,7 +44,7 @@
   <https://github.com/ChristyGruen>
   <br>
   For questions, comments and concerns, please log an issue at: :
-  <https://github.com/ChristyGruen/Project2/issues>
+  <https://github.com/ChristyGruen/ecommerce/issues>
 
   ## References
   Sequelize provided by:
