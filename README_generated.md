@@ -25,7 +25,7 @@
   
       To run the app, type node index.js in the terminal and enter. Answer the questions posed in the terminal.  Once all the questions are answered, a README.md file will be generated in the root directory of the project.
   Watch a demo of the app here:
-  <https://watch.screencastify.com/v/LGnvXAt6R6cMVc3untRV>
+  <https://watch.screencastify.com/v/01KYIF41RvVorlSERhe6>
   
   ## License
     This project is covered under the MIT license.
