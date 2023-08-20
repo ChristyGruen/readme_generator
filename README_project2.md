@@ -1,11 +1,11 @@
 
-  # Automated README file
+  # Coding Quizzes and Tips
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
   
-      The automated README project will quickly and easily create a high-quality README file to allow project creators to devote more time to coding.  The app will use command line questions and input to generate a complete, professional README.  
+      The coding quizzes and tips is an application to provide opportunities for people to learn coding and sharpen their skills,  and to provide tips to help new coders prepare for interviews, expand their coding knowledge, etc…
 
   ## Table of Contents
   [Installation Instructions](#installation-instructions)<br>
@@ -19,19 +19,19 @@
   
   ## Installation Instructions
   
-      To install the required packages to run this app, navigate to the root directory of the project and open an integrated terminal.  Type <strong> npm i -y</strong> in the terminal and enter.  This will install the packages listed in the package manager, including inquirer v8.2.4.
+      To install the required packages to run this app locally, navigate to the root directory of the project and open an integrated terminal.  Type <strong> npm i -y</strong> in the terminal and enter.  This will install the packages listed in the package manager, including inquirer v8.2.4.
   
   ## Usage
   
-      To run the app, type node index.js in the terminal and enter. Answer the questions posed in the terminal.  Once all the questions are answered, a README.md file will be generated in the root directory of the project.
+      To run the app locally, type node server.js in the terminal and enter. To run the app in the browser: click on the link below https://quiztips-3189c8e233bc.herokuapp.com/
   Watch a demo of the app here:
-  <https://watch.screencastify.com/v/01KYIF41RvVorlSERhe6>
+  <https://watch.screencastify.com/v/LGnvXAt6R6cMVc3untRV>
   
   ## License
     This project is covered under the MIT license.
 
   ## Contributors
-  ChristyGruen at <https://github.com/ChristyGruen>
+  Jacqueline-Stiehl, mikeengstrand, ChristyGruen, toxicmix, Henrichm77 at <https://github.com/Jacqueline-Stiehl, mikeengstrand, ChristyGruen, toxicmix, Henrichm77>
       
   #### How to Contribute
       To contribute to the app: fork the repo on GitHub, then clone the project to your own machine.  Update the code, commit your changes to your own branch, then push your work to your fork on GitHub. Finally, submit a Pull request for review.
@@ -44,9 +44,9 @@
   <https://github.com/ChristyGruen>
   <br>
   For questions, comments and concerns, contact me here:
-  <cg@mail.com>
+  <none>
 
   ## References
-  License badges provided by:
-  <https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba>
+  none provided by:
+  <none>
   

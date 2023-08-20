@@ -1,11 +1,11 @@
 
-  # Automated README file
+  # Employee Tracker
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
   
-      The automated README project will quickly and easily create a high-quality README file to allow project creators to devote more time to coding.  The app will use command line questions and input to generate a complete, professional README.  
+      The employee tracker is an application view and manage the departments, roles and employees in the company.  This application is a command-line application that uses Node.js, Inquirer, and mySQL.
 
   ## Table of Contents
   [Installation Instructions](#installation-instructions)<br>
@@ -23,9 +23,9 @@
   
   ## Usage
   
-      To run the app, type node index.js in the terminal and enter. Answer the questions posed in the terminal.  Once all the questions are answered, a README.md file will be generated in the root directory of the project.
+      To run the app, type node server.js in the terminal and enter. All of the most important questions in the world will be answered
   Watch a demo of the app here:
-  <https://watch.screencastify.com/v/01KYIF41RvVorlSERhe6>
+  <https://watch.screencastify.com/v/LGnvXAt6R6cMVc3untRV>
   
   ## License
     This project is covered under the MIT license.
@@ -44,9 +44,9 @@
   <https://github.com/ChristyGruen>
   <br>
   For questions, comments and concerns, contact me here:
-  <cg@mail.com>
+  <none>
 
   ## References
-  License badges provided by:
-  <https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba>
+  none provided by:
+  <none>
   

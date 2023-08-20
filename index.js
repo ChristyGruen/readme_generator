@@ -20,6 +20,7 @@ let licenseBadges = [
 inquirer
   .prompt([
     {type: 'input',message: 'Enter your project title?',name: 'projTitle' },
+    {type: 'input',message: 'Enter the gitHub repository name of your project.',name: 'repoTitle' },
     {type: 'input',message: 'Provide a short description of including the what, why and how of your project.',name: 'projDesc' },
     {type: 'input',message: 'What are the steps required to install your project?',name: 'projInstall' },
     {type: 'input',message: 'What steps are required to run the application?',name: 'projInstructions' },
@@ -106,8 +107,8 @@ function docContent(response, prettyBadge){
   For further information, access my gitHub profile here:
   <https://github.com/${response.projGitHubUN}>
   <br>
-  For questions, comments and concerns, contact me here:
-  <${response.projGitHubEmail}>
+  For questions, comments and concerns, please log an issue at: :
+  <https://github.com/${response.projGitHubUN}/${response.repoTitle}/issues>
 
   ## References
   ${response.refDescription} provided by:
